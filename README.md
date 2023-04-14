@@ -108,7 +108,7 @@ Almacenes Rodríguez | Patrimonio edificado | Calle Caballero De Gracia, 3 | Pla
 - Output ➡️ Directions Map
     - Filename: map
     - Format: .html
-    - Location: Opens in browser and saves in folder "outputs" 
+    - Location: Opens in browser and saves in the "project" folder 
 
 
 ## 🔜 Roadmap

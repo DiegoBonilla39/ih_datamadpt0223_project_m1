@@ -115,5 +115,5 @@ Almacenes Rodríguez | Patrimonio edificado | Calle Caballero De Gracia, 3 | Pla
 
 - Create a system to obtain missing coordinates using the addresses of the sites of interest.
 - In the “Explore Mode”, give the user the option to choose how to get the final table (e.g. a specific route).
-- Create a modality within the "Navigation Mode" that gives users 5 possible bikeMAD stations instead of one.
+- Create a modality within the "Navigation Mode" that gives users 5 possible BiciMAD stations instead of one.
 

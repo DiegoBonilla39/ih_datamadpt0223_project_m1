@@ -186,10 +186,11 @@ def outcome_one_place(df,key):
     map_ = folium.Map(location=[40.416775, -3.703790], zoom_start=10)
     # Add markers to the map with different colors and labels
     folium.Marker(location=place, popup=df['Place of interest'][0], icon=folium.Icon(color='red')).add_to(map_)
-    folium.Marker(location=bicimad, popup=df['BiciMAD station'][0], icon=folium.Icon(color='blue')).add_to(map_)
+    folium.Marker(location=bicimad, popup=df['BiciMAD station'][0]+'\n'+str(df['Available bikes'][0])+" bikes"\
+                  , icon=folium.Icon(color='blue')).add_to(map_)
     # Add the walking route to the map
     folium.PolyLine(locations=route_coords, tooltip=time_tag, color='green', weight=5).add_to(map_)
     # Save the map as an HTML file and open it in a web browser
-    map_.save('./outputs/map.html')
-    webbrowser.open_new_tab('./outputs/map.html')
+    map_.save('map.html')
+    webbrowser.open_new_tab('map.html')
     return print("Your directions map is ready! Thank you for using the app")

@@ -29,21 +29,14 @@ Get ready to pedal your way to new adventures with BiciMAD Go-To!
 
 ```bash
 └── project
-    ├── __trash__
     ├── .gitignore
-    ├── .env
     ├── README.md
     ├── main.py
-    ├── notebooks
-    │   ├── notebook1.ipynb
-    │   └── notebook2.ipynb
-    ├── package1
-    │   ├── module1.py
-    │   └── module2.py
-    └── data
-        ├── raw
-        ├── processed
-        └── results
+    ├── outputs
+    │   └── .gitkeep
+    └── modules
+        └── pipeline_module.py
+
 ```
     
 ## 💻 Technology Stack

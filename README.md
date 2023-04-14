@@ -29,21 +29,14 @@ Get ready to pedal your way to new adventures with BiciMAD Go-To!
 
 ```bash
 └── project
-    ├── __trash__
     ├── .gitignore
-    ├── .env
     ├── README.md
     ├── main.py
-    ├── notebooks
-    │   ├── notebook1.ipynb
-    │   └── notebook2.ipynb
-    ├── package1
-    │   ├── module1.py
-    │   └── module2.py
-    └── data
-        ├── raw
-        ├── processed
-        └── results
+    ├── outputs
+    │   └── .gitkeep
+    └── modules
+        └── pipeline_module.py
+
 ```
     
 ## 💻 Technology Stack
@@ -115,12 +108,12 @@ Almacenes Rodríguez | Patrimonio edificado | Calle Caballero De Gracia, 3 | Pla
 - Output ➡️ Directions Map
     - Filename: map
     - Format: .html
-    - Location: Opens in browser and saves in folder "outputs" 
+    - Location: Opens in browser and saves in the "project" folder 
 
 
 ## 🔜 Roadmap
 
 - Create a system to obtain missing coordinates using the addresses of the sites of interest.
 - In the “Explore Mode”, give the user the option to choose how to get the final table (e.g. a specific route).
-- Create a modality within the "Navigation Mode" that gives users 5 possible bikeMAD stations instead of one.
+- Create a modality within the "Navigation Mode" that gives users 5 possible BiciMAD stations instead of one.
 

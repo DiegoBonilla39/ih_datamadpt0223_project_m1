@@ -196,4 +196,4 @@ def outcome_one_place(df,key):
     # Save .csv
     df = df.filter(items=["Place of interest", "Type of place", "Place address", 'BiciMAD station', 'Station location', 'Available bikes'])
     df.to_csv('./outputs/one_nearest_station.csv', index=False)
-    return print("Your fiile and directions map is ready! Thank you for using the app")
+    return print("Your file and directions map are ready! Thank you for using the app")

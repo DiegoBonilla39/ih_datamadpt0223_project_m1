@@ -89,7 +89,7 @@ Sign up on https://api.openrouteservice.org/ by creating an account:
   python main.py --mode="Explore"
 ```
 - Output ➡️ Table
-    - Filename: nearest_station
+    - Filename: all_nearest_station
     - Format: .csv
     - Location: Folder "outputs"
 
@@ -109,6 +109,10 @@ Almacenes Rodríguez | Patrimonio edificado | Calle Caballero De Gracia, 3 | Pla
     - Filename: map
     - Format: .html
     - Location: Opens in browser and saves in the "project" folder 
+- Output ➡️ Table
+    - Filename: one_nearest_station
+    - Format: .csv
+    - Location: Folder "outputs"
 
 
 ## 🔜 Roadmap

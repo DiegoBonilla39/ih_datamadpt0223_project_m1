@@ -156,7 +156,7 @@ def nearest_bicimad_station(df_places, df_bicimad):
 
 def outcome_all_places(df):
     df = df.filter(items=["Place of interest", "Type of place", "Place address", 'BiciMAD station', 'Station location', 'Available bikes'])
-    df.to_csv('./outputs/nearest_station.csv', index=False)
+    df.to_csv('./outputs/all_nearest_station.csv', index=False)
     return print("Your file is ready! Thank you for using the app")
 
 def outcome_one_place(df,key):
@@ -193,4 +193,7 @@ def outcome_one_place(df,key):
     # Save the map as an HTML file and open it in a web browser
     map_.save('map.html')
     webbrowser.open_new_tab('map.html')
-    return print("Your directions map is ready! Thank you for using the app")
+    # Save .csv
+    df = df.filter(items=["Place of interest", "Type of place", "Place address", 'BiciMAD station', 'Station location', 'Available bikes'])
+    df.to_csv('./outputs/one_nearest_station.csv', index=False)
+    return print("Your fiile and directions map is ready! Thank you for using the app")
